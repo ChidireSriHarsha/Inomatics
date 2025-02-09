@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innomatics</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ff0000;
+            color: white;
+        }
+        .logo img {
+            max-height: 50px;
+        }
+        .phone-numbers {
+            display: flex;
+            gap: 20px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            color: black;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        .dropdown a {
+            color: black;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+        }
+        .dropdown a:hover {
+            background-color: #f0f0f0;
+        }
+        section {
+            padding: 20px;
+            margin: 10px 0;
+        }
+        footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="innomatics.png" alt="Innomatics Logo"> <!-- Add your logo -->
+        </div>
+        <div class="phone-numbers">
+            <span>Hyd: <a href="tel:+919951666670">9951666670</a></span>
+            <span>Pune: <a href="tel:+919951666671">9951666671</a></span>
+            <span>Bangalore: <a href="tel:+919951666672">9951666672</a></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li>
+                    <a href="#courses">Courses</a>
+                    <div class="dropdown">
+                        <a href="#data-science">Data Science</a>
+                        <a href="#ml">Machine Learning</a>
+                        <a href="#FSD">Full stack Development</a>
+                        <a href="#Dm">Digital Marketing</a>
+                        <a href="#AWS">Amazon Web Services</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#It-Scholar-Internship">IT Scholar Internship</a>
+                </li>        
+                    <a href="#internship">Internship</a>
+                    <div class="dropdown">
+                        <a href="#ai-internship">AI Internship</a>
+                        <a href="#full-stack">Full Stack Development</a>
+                        <a href="#generative-ai">Generative AI</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#events">Events</a>
+                    <div class="dropdown">
+                        <a href="#bootcamp">5 Days Generative AI Bootcamp</a>
+                        <a href="#webinar">Free Online Data Science Webinar</a>
+                        <a href="#campus-ambassador">Campus Ambassador Program</a>
+                    </div>
+                </li>
+                <li><a href="#pay-now">₹ Pay Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Welcome to Innomatics</h1>
+        <p>Transform your career with our innovative programs.</p>
+    </section>
+<!-- Courses Section -->
+<section id="courses">
+    <h2>Our Courses</h2>
+    <div class="course-grid">
+        <div class="course-item">
+            <img src="ds.jpg" alt="Course 1">
+            <h3>Data Science</h3>
+            <p>Learn the fundamentals of data science and analytics.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="course-item">
+            <img src="ml.jpg" alt="Course 2">
+            <h3>Machine Learning</h3>
+            <p>Master machine learning algorithms and their applications.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="course-grid">
+            <div class="course-item">
+                <img src="fsd.jpg" alt="Course 3">
+                <h3>Full stack development</h3>
+                <p>Full stack development is the process of building both the front end and back end of an application</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="course-grid">
+                <div class="course-item">
+                    <img src="dm.png" alt="Course 4">
+                    <h3>Digital Marketing</h3>
+                    <p>Digital marketing is the use of the internet and online technologies to promote a business's products or services.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="course-grid">
+                    <div class="course-item">
+                        <img src="aws.jpg" alt="Course 5">
+                        <h3>Amazon web Services(AWS)</h3>
+                        <p>Amazon Web Services (AWS) is a cloud computing platform that offers a variety of services.</p>
+                        <a href="#">Read More</a>
+    </div>
+</section>
+
+<!-- Internship Section -->
+<section id="internship">
+    <h2>Internships at Innomatics</h2>
+    <p>Join our internship program to gain hands-on experience in cutting-edge technologies like AI, Full Stack Development, and Generative AI.</p>
+    <div class="internship-links">
+        <a href="https://www.innomatics.in/ai-internship/" target="_blank">
+            <img src="aiis.jpg" alt="AI Internship">
+        </a>
+        <a href="https://www.innomatics.in/full-stack-development-internship/" target="_blank">
+            <img src="fsdis.jpg" alt="Full Stack Development Internship">
+        </a>
+        <a href="https://www.innomatics.in/free-datascience-internship/" target="_blank">
+            <img src="dsis.webp" alt="Free Data Science Internship">
+        </a>
+    </div>
+</section>
+<!-- IT Scholar Internship Section -->
+<section id="It-Scholar-Internship">
+    <h2>IT Scholar Internship</h2>
+    <img src="itscholar.webp" alt="IT Scholar Internship">
+</section>
+
+    <section id="about-us">
+        <h2>About Us</h2>
+        <p>Empowering students with industry-ready skills.</p>
+    </section>
+
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <ul>
+            <li><a href="#bootcamp">5 Days Generative AI Bootcamp</a></li>
+            <li><a href="#webinar">Free Online Data Science Webinar</a></li>
+            <li><a href="#campus-ambassador">Campus Ambassador Program</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact us at <a href="mailto:info@innomatics.in">info@innomatics.in</a></p>
+        <p>&copy; 2025 Innomatics. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
