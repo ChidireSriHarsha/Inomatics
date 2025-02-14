@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="shopping.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Shopping Cart</h1>
+      <div class="cart-icon" id="cart-icon">
+        🛒 <span id="cart-count">0</span>
+      </div>
+    </header>
+    
+    <section class="products">
+      <!-- Electronics -->
+      <div class="category">
+        <h2>Electronics</h2>
+        <div class="product">
+          <img src="images/laptop.jpg" alt="Laptop">
+          <h3>Laptop</h3>
+          <p>$1000</p>
+          <button class="add-to-cart" data-name="Laptop" data-price="1000">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="images/smartphone.jpg" alt="Smartphone">
+          <h3>Smartphone</h3>
+          <p>$800</p>
+          <button class="add-to-cart" data-name="Smartphone" data-price="800">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="images/smartwatch.jpg" alt="Smartwatch">
+          <h3>Smartwatch</h3>
+          <p>$250</p>
+          <button class="add-to-cart" data-name="Smartwatch" data-price="250">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Fashion -->
+      <div class="category">
+        <h2>Fashion</h2>
+        <div class="product">
+          <img src="images/tshirt.jpg" alt="T-shirt">
+          <h3>T-shirt</h3>
+          <p>$20</p>
+          <button class="add-to-cart" data-name="T-shirt" data-price="20">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="images/sneakers.jpg" alt="Sneakers">
+          <h3>Sneakers</h3>
+          <p>$60</p>
+          <button class="add-to-cart" data-name="Sneakers" data-price="60">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="images/headphones.jpg" alt="Headphones">
+          <h3>Headphones</h3>
+          <p>$120</p>
+          <button class="add-to-cart" data-name="Headphones" data-price="120">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="images/jeans.jpg" alt="Jeans">
+          <h3>Jeans</h3>
+          <p>$40</p>
+          <button class="add-to-cart" data-name="Jeans" data-price="40">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p id="total">Total: $0</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
