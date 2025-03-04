@@ -1,0 +1,113 @@
+// Global Styles (global.css)
+/* src/styles/global.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+// Navbar Styles (Navbar.css)
+/* src/styles/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #333;
+  color: white;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 1rem;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+// Home Styles (Home.css)
+/* src/styles/Home.css */
+.home {
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.home h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+// About Styles (About.css)
+/* src/styles/About.css */
+.about {
+  padding: 3rem;
+  background: white;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #222;
+}
+
+// Skills Styles (Skills.css)
+/* src/styles/Skills.css */
+.skills ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+// Projects Styles (Projects.css)
+/* src/styles/Projects.css */
+.projects {
+  padding: 3rem;
+  background: #fff;
+}
+
+.projects h2 {
+  font-size: 2rem;
+}
+
+// Experience Styles (Experience.css)
+/* src/styles/Experience.css */
+.experience {
+  padding: 3rem;
+}
+
+.experience h2 {
+  font-size: 2rem;
+}
+
+// Contact Styles (Contact.css)
+/* src/styles/Contact.css */
+.contact {
+  padding: 3rem;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+}
+
+// Footer Styles (Footer.css)
+/* src/styles/Footer.css */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: white;
+}
